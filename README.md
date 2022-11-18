@@ -3,7 +3,7 @@
 This is a Web3Dev Bootcamp, where we had to developer a Game on Blockchain.
 This game gives you oportunity to earn money after defeat the Big boss.
 
-To hit big boss you have to spend some amount of money, then you gain tickes for each hit you dealt to boss, when you defeat the big boss, we are going to get a random ticket e give all money spent to attack boss to the winner, than a new boss arrives and start the cycle again.
+To hit big boss you have to spend some amount of money, then you gain tickets for each hit you dealt to boss, when you defeat the big boss, we are going to get a random ticket e give all money spent to attack boss to the winner, than a new boss arrives and start the cycle again.
 
 ## Installation and execution
 
