@@ -1,0 +1,25 @@
+{
+  "name": "epic-game-truffle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "migrate_goerli": "truffle migrate --network goerli",
+    "test": "truffle test",
+    "start_local": "ganache -i 666 -m \"teach core boat want author animal neglect social bone page modify mass\""
+  },
+  "author": "Lucas Ramos Archangelo",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.0",
+    "@truffle/hdwallet-provider": "^2.1.1",
+    "dotenv": "^16.0.3",
+    "hardhat": "^2.12.2",
+    "nodejs-base64-converter": "^1.0.5",
+    "truffle": "^5.6.4",
+    "web3": "^1.8.1"
+  }
+}
