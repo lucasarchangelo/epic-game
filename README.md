@@ -1,40 +1,62 @@
-# React Truffle Box
+# Whats is it and How is it work?
 
-This box comes with everything you need to start using Truffle to write, compile, test, and deploy smart contracts, and interact with them from a React app.
+This is a Web3Dev Bootcamp, where we had to developer a Game on Blockchain.
+This game gives you oportunity to earn money after defeat the Big boss.
 
-## Installation
+To hit big boss you have to spend some amount of money, then you gain tickes for each hit you dealt to boss, when you defeat the big boss, we are going to get a random ticket e give all money spent to attack boss to the winner, than a new boss arrives and start the cycle again.
 
-First ensure you are in an empty directory.
+## Installation and execution
 
-Run the `unbox` command using 1 of 2 ways.
+if you want to start it local, you have to:
 
 ```sh
-# Install Truffle globally and run `truffle unbox`
-$ npm install -g truffle
-$ truffle unbox react
+# install ganache and truffle global
+$ npm install ganache --global
+$ npm install truffle --global
+```
+
+
+```sh
+# install dependecies from Truffle folder
+$ cd Truffle
+$ npm i
 ```
 
 ```sh
-# Alternatively, run `truffle unbox` via npx
-$ npx truffle unbox react
+# install dependecies from Client folder
+$ cd Client
+$ npm i
 ```
-
-Start the react dev server.
 
 ```sh
-$ cd client
-$ npm start
-  Starting the development server...
+# start ganache local
+$ cd Truffle
+$ npm run start_local
 ```
 
-From there, follow the instructions on the hosted React app. It will walk you through using Truffle and Ganache to deploy the `SimpleStorage` contract, making calls to it, and sending transactions to change the contract's state.
+```sh
+# migrate all contracts to ganache environment
+$ cd Truffle
+$ cd truffle migrate
+```
 
-## FAQ
+```sh
+# start nextjs
+$ cd Client
+$ cd npm run dev
+```
 
-- __How do I use this with Ganache (or any other network)?__
 
-  The Truffle project is set to deploy to Ganache by default. If you'd like to change this, it's as easy as modifying the Truffle config file! Check out [our documentation on adding network configurations](https://trufflesuite.com/docs/truffle/reference/configuration/#networks). From there, you can run `truffle migrate` pointed to another network, restart the React dev server, and see the change take place.
+## Next steps for this project
 
-- __Where can I find more resources?__
+- __Implement ChainLink to safe random word__
 
-  This Box is a sweet combo of [Truffle](https://trufflesuite.com) and [Create React App](https://create-react-app.dev). Either one would be a great place to start!
+  I'd like to use chainlink oracle to implement a safe random word, that way, I know that anyone hacks this process.
+
+- __Better gas spend on attack method__
+
+  I think this method is very expensive, and I could do it better
+
+- __Create an admin sector, it could help the owner to start new boss e change owner properties__
+
+  I think this method is very expensive, and I could do it better
